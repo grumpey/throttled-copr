@@ -10,7 +10,7 @@ Release:  1
 Summary:  Workaround for Intel throttling issues in Linux
 License:  MIT
 URL:      https://github.com/erpalma/throttled
-Source0:  https://github.com/erpalma/throttled/%{commit}/%{name}-%{commit}.tar.gz
+Source0:  https://github.com/erpalma/throttled/archive/%{commit}/%{name}-%{commit}.tar.gz
 Source1:  throttled.service
 
 BuildRequires: python3-devel
