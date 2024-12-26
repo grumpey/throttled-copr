@@ -1,11 +1,11 @@
 %global _hardened_build 1
-%global commit e7e069e31ec10564513fc88422de20e377496c91
-%global date 20241110
+%global commit af3ff45b008d38a8e010df51d9b4bccc1ecd69cf
+%global date 20241226
 %{?commit:%global shortcommit %(c=%{commit}; echo ${c:0:7})}
 %define debug_package %{nil}
 
 Name:     throttled
-Version:  0.10.0^%{date}git%{shortcommit}
+Version:  0.11.0^%{date}git%{shortcommit}
 Release:  1
 Summary:  Workaround for Intel throttling issues in Linux
 License:  MIT
@@ -62,6 +62,9 @@ install -D %{SOURCE1} %{buildroot}/%{_unitdir}/%{name}.service
 %attr(644, root, root) %{_unitdir}/%{name}.service
 
 %changelog
+* Thu Dec 26 2024 Joe Walker <grumpey0@gmail.com> - 0.11.0^20241226gitaf3ff45-1
+- Update to latest tag and commit 
+
 * Sun Nov 10 2024 Joe Walker <grumpey0@gmail.com> - 0.10.0^20241110gite7e069e-1
 - Update to commit that supports python 3.13
 
