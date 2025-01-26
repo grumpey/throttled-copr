@@ -1,6 +1,6 @@
 %global _hardened_build 1
-%global commit af3ff45b008d38a8e010df51d9b4bccc1ecd69cf
-%global date 20241226
+%global commit a7bf1b3ccf9e8367f0f7f3ada82e3b313498e320 
+%global date 20250125
 %{?commit:%global shortcommit %(c=%{commit}; echo ${c:0:7})}
 %define debug_package %{nil}
 
@@ -62,6 +62,9 @@ install -D %{SOURCE1} %{buildroot}/%{_unitdir}/%{name}.service
 %attr(644, root, root) %{_unitdir}/%{name}.service
 
 %changelog
+* Sat Jan 25 2025 Joe Walker <grumpey0@gmail.com> - 0.11.0^20250125gita7bf1b3-1
+- Update to latest commit 
+
 * Thu Dec 26 2024 Joe Walker <grumpey0@gmail.com> - 0.11.0^20241226gitaf3ff45-1
 - Update to latest tag and commit 
 
